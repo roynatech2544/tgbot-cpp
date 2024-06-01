@@ -86,7 +86,7 @@ set(LIB_LIST
 )
 
 if (CURL_FOUND)
-    set(LIB_LIST ${LIB_LIST} ${CURL_LIBRARIES})
+    set(LIB_LIST ${LIB_LIST} CURL::libcurl)
 endif()
 
 if (WIN32)
